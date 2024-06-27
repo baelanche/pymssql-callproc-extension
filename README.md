@@ -7,7 +7,7 @@ https://github.com/pymssql/pymssql extension module (callproc function)
 
 ## Practice
 
-1. create table
+### 1. create table
 
 ```sql
 use test
@@ -29,7 +29,7 @@ insert into dbo.books values(9, 'i')
 insert into dbo.books values(10, 'j')
 ```
 
-2. create procedure and write codes (no outputs)
+### 2. create procedure and write codes (no outputs)
 
 ```sql
 use test
@@ -74,7 +74,7 @@ output:
 [(5, 'e')]
 ```
 
-2. create procedure and write codes (outputs)
+### 3. create procedure and write codes (outputs)
 
 ```sql
 use test
