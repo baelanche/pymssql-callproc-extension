@@ -56,7 +56,14 @@ end
 2. write codes
 
 ```python
-from pymssql_extension import get_mssql_session
+from pymssql_extension import Mssql
+
+def get_mssql_session():
+    mssql = Mssql()
+    try:
+        yield mssql
+    finally:
+        mssql.session.close()
 
 db_generator = get_mssql_session()
 

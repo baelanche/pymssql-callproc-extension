@@ -56,10 +56,3 @@ class Mssql:
                     return result, outputs
 
             return result, None
-        
-def get_mssql_session():
-    mssql = Mssql()
-    try:
-        yield mssql
-    finally:
-        mssql.session.close()
